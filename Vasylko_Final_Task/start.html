@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/07bd484151.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/start.css">
+</head>
+
+<body>
+<div class="body-wrapper">
+    <header>
+        <div class="side-padding">
+            <span class="top-header">
+            <a href="start.html" class="logo">Template</a>
+            <a href="start.html" class="logo-mobile">TL</a>
+            <span>
+                <a class="float-right mail">E-mail sing up</a>
+                <a href="shopping-bag.html" class="float-right bag"><i
+                        class="fas fa-shopping-bag bag-icon"></i>Bag £<span id="total-price"></span> (<span
+                        id="total-count"></span>)</a>
+            </span>
+            <span class="menu" id="menu">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span id="close-menu" class="close">
+                <i class="fas fa-times"></i>
+            </span>
+        </span>
+            <div class="nav-wrapper" id="navigation">
+                <nav class="nav">
+                    <ul>
+                        <li class="nav__item"><a href="catalog.html">Women</a></li>
+                        <li class="nav__item"><a href="#">Men</a></li>
+                        <li class="nav__item"><a href="#">Handbags</a></li>
+                        <li class="nav__item"><a href="#">Accessories</a></li>
+                        <li class="nav__item"><a href="#">Sale</a></li>
+                        <li class="nav__item"><a href="#">New Arrivals</a></li>
+                        <li class="nav__item"><a href="#">Clearance</a></li>
+                        <li class="nav__item"><a href="#">Store Locator</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <input type="search" placeholder="Style Name" class="search__input">
+                    <button class="search__button"><i class="fas fa-search search__icon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner-wrapper">
+            <div class="banner__left banner">
+                <a href="item.html"><img src="img/nike.png" alt="product image"></a>
+                <h3>Nike Red</h3>
+            </div>
+            <div class="banner__right banner">
+                <a href="catalog.html"><img src="img/hats.jpg" alt="product image"></a>
+                <h3>Caps & Hats</h3>
+                <span class="font-italic">Sale -50%</span>
+            </div>
+        </div>
+        <section class="section-offer side-padding">
+            <h2>Best offer</h2>
+            <span class="font-italic description-italic">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GTM on December 1st 2019</span>
+            <div class="offer-wrapper">
+                <div class="offer__item">
+                    <i class="fas fa-chevron-up arrow" id="first-slider-up"></i>
+                    <div class="offer__item-wrapper">
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/only_skinny.png" alt="product image">
+                                <span class="new">NEW</span>
+                            </div>
+                            <span class="item-name">Only Skinny Jeans</span>
+                            <span class="item-price">£70.50</span>
+                        </a>
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/coat.png" alt="product image">
+                                <span class="new">NEW</span>
+                            </div>
+                            <span class="item-name">Coat</span>
+                            <span class="item-price">£65.50</span>
+                        </a>
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/dress.png" alt="product image">
+                                <span class="new">NEW</span>
+                            </div>
+                            <span class="item-name">Dress</span>
+                            <span class="item-price">£66.50</span>
+                        </a>
+                    </div>
+                    <i class="fas fa-chevron-down arrow" id="first-slider-down"></i>
+                </div>
+                <i class="fas fa-plus icon-black"></i>
+                <div class="offer__item">
+                    <i class="fas fa-chevron-up arrow" id="second-slider-up"></i>
+                    <div class="offer__item-wrapper">
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/levis_women_jeans.png" alt="product image">
+                            </div>
+                            <span class="item-name">Levi`s Jeans for women</span>
+                            <span class="item-price">£83.50</span>
+                        </a>
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/jacket.png" alt="product image">
+                            </div>
+                            <span class="item-name">Jacket for women</span>
+                            <span class="item-price">£95.50</span>
+                        </a>
+                        <a href="item.html">
+                            <div class="new-item">
+                                <img src="img/bohemian.png" alt="product image">
+                            </div>
+                            <span class="item-name">Bohemian</span>
+                            <span class="item-price">£99.99</span>
+                        </a>
+                    </div>
+                    <i class="fas fa-chevron-down arrow" id="second-slider-down"></i>
+                </div>
+                <i class="fas fa-equals icon-black"></i>
+                <div class="price-wrapper">
+                    <span class="old-price" id="old-price">£161.00</span>
+                    <span class="new-price" id="new-price">£146.00</span>
+                    <button class="button add-button">Add to bag</button>
+                </div>
+            </div>
+            <button class="button button-tablet add-button">Add to bag</button>
+        </section>
+        <section class="section-catalog side-padding">
+            <h2>New arrivals</h2>
+            <div class="products best-offer">
+                <a class="item" href="item.html">
+                    <div class="products-image-wrapper">
+                        <img src="img/only_skinny.png" alt="product image">
+                        <span class="new">NEW</span>
+                    </div>
+                    <span class="item-name">Only Skinny Jeans</span>
+                    <span class="item-price">£65.50</span>
+                </a>
+                <a class="item" href="item.html">
+                    <div class="products-image-wrapper">
+                        <img src="img/jacket.png" alt="product image">
+                        <span class="new">NEW</span>
+                    </div>
+                    <span class="item-name">Neck Knitted Jacket</span>
+                    <span class="item-price">£76.25</span>
+                </a>
+                <a class="item" href="item.html">
+                    <div class="products-image-wrapper">
+                        <img src="img/coat.png" alt="product image">
+                    </div>
+                    <span class="item-name">Turtle Neck Jumper in Rib</span>
+                    <span class="item-price">£120.25</span>
+                </a>
+                <a class="item" href="item.html">
+                    <div class="products-image-wrapper">
+                        <img src="img/dress.png" alt="product image">
+                    </div>
+                    <span class="item-name">With Patchwork Crochet</span>
+                    <span class="item-price">£80.60</span>
+                </a>
+            </div>
+            <a href="catalog.html">
+                <a href="catalog.html">
+                    <button class="button start-button ">All arrivals</button>
+                </a>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="side-padding">
+            <div class="footer-left">
+                <div class="left-list">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Store locator</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Size guide</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="right-list">
+                    <h5>Customer Care</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Track my oder</a></li>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">Shipping & delivery</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-right">
+                <div class="contacts-left">
+                    <h5>Questions</h5>
+                    <i class="fab fa-twitter icon-grey"></i>
+                    <span>Tweet us </span>
+                    <span>@temlate</span>
+                </div>
+                <div class="contacts-right">
+                    <h5>Order by phone</h5>
+                    <span>8-800-409-47-12</span>
+                </div>
+                <div class="font-italic">We have our own delivery service which operates in 23 major European cities.
+                    Delivery time - 3-5 days.
+                </div>
+                <div class="links">
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon-fb"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter icon-twitter"></i></a>
+                    </div>
+                    <div class="copyright-item">
+                        <a href="#">Legal notice</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Site map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-wrapper side-padding">
+            <div class="copyright-item">&copy; 2010-2015, The Template Group Inc.</div>
+            <div class="copyright-item">Share<span>1 437</span></div>
+            <div class="copyright-item">
+                <a href="#">Legal notice</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Site map</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="JS/main.js"></script>
+<script src="JS/start.js"></script>
+</body>
+
+</html>

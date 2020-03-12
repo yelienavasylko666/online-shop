@@ -1,0 +1,195 @@
+.return {
+    margin-top: 120px;
+}
+
+.heading {
+    display: block;
+    color: #000000;
+    font-size: 26px;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.bag-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item,
+.new-item,
+.item-information {
+    display: inline-block;
+    font-size: 0;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 90px;
+}
+
+.item .colorized {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.new-item {
+    overflow: hidden;
+}
+
+.new-item:hover:after {
+    left: 0;
+}
+
+.new-item:after {
+    content: "Edit item";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #f14a58;
+    transition: left 0.3s ease-out;
+}
+
+.item-information .item-name,
+.item-information .item-price,
+.color,
+.size,
+.quality {
+    text-align: left;
+}
+
+.item-information {
+    vertical-align: top;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.delivery {
+    font-family: Helvetica-bold;
+    display: block;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e5e5e5;
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.colorized {
+    color: #f14a58;
+}
+
+.total {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.total button,
+.total .amount {
+    font-family: "Helvetica-bold";
+}
+
+.clean {
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.clean:hover {
+    color: #f14a58;
+}
+
+.amount {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.amount .colorized {
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: right;
+}
+
+.item-price {
+    font-family: "Helvetica-bold";
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.chosen-options,
+.quality {
+    font-family: "Helvetica";
+    font-weight: 100;
+    display: block;
+    font-size: 12px;
+    color: #000000;
+}
+
+.chosen-options,
+.quality {
+    margin-bottom: 15px;
+}
+
+.item-information .fa-minus,
+.item-information .fa-plus {
+    margin: 0 11px;
+}
+
+.item img,
+.new-item {
+    width: 50%;
+}
+
+.new-item img {
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    .heading {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        display: block;
+        margin: 0;
+        width: 100%;
+        font-size: 0;
+    }
+    .item img,
+    .item-information {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .item {
+        margin-bottom: 50px;
+    }
+    .new-item {
+        margin-bottom: 0;
+    }
+    .new-item img {
+        width: 100%;
+    }
+    .heading {
+        border-top: none;
+    }
+
+}
+
+
+
+
